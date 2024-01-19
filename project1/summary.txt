@@ -1,0 +1,19 @@
+﻿The test for user_interface.c and database.c went smoothly. It passed critical tests such as picking any of the options when the file was empty or did not exist and handled it accordingly. The getaddress function is able to acquire the address in any format (addresses with numbers, commas, new line spaces, etc.) and handles it properly. A problem arose when entering an address that was longer than 50 characters; however, the program handled it accordingly by
+prompting the user to enter a shorter address. The same problem was seen when entering the name; luckily, the program prompts the user to enter a shorter name. The program will continuously ask the user to enter a shorter address/name when given an address/name that is too long. The records are organized accordingly in descending order based on the account number. The printall function is able to print all of the records in the file accordingly by descending account number and keeps the addresses the way they were typed in by the user. It also shows a message that there are no records to be printed when the file is empty or does not exist. The addrecord function works properly by adding only new records with new account numbers and handles when duplicate account numbers are entered by not adding them to the file. Similarly, the deleterecord function and findrecord function work accordingly by only accepting account numbers that exist in the file and handles non-existing account numbers by showing a message that the account number does not exist. 
+
+
+The option handling worked accordingly and continuously prompted the user to enter a valid option without quitting the program; however, it still took partial options (such as "ad" for the add option) as a valid option. It also handles case-sensitive entries (such as "Add" for add) and handles them properly by letting the entries be valid options if it is valid. It also handles incorrectly spelled options and similar worded options (such as "quilt" and "quits" for the quit option) by continuously prompting the user to input a valid option until the user does so. Similarly, when calling any of the options that require an account number, it handles account numbers that are less than or equal to 0 by prompting the user to enter an account number greater than 0; and it handles when the user inputs characters instead of numbers, and prompts the user to input an integer.
+
+
+After modifying the file filled with records, such as adding a record or deleting a record,
+the writeFile function works properly by writing to the file exactly how the user entered their
+data and handles if the file can not be opened. The same can be said with the readFile function as it correctly reads the file filled with records and properly handles when the file can not be
+opened so the program does not crash. 
+
+
+The debug mode invoking handles invalid command-line arguments correctly and debug mode is only invoked when typed in properly (./project debug). When entered incorrectly, it prints out an error message and does not start the program and exits immediately. When command-line arguments are entered correctly, it
+shows every function that is being called within the program to the terminal in
+a distinctive fashion to differentiate between user input and program output.
+
+
+Overall, the program has handled all known tests and handles them accordingly.

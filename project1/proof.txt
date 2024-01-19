@@ -1,0 +1,23 @@
+Script started on Fri 27 Oct 2023 11:31:16 PM HST
+]0;cdc21@uhx02:~/project1[?1034huhx02:/home/c/cdc21/project1% touch *.c
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% make
+gcc -ansi -pedantic-errors -Wall -c user_interface.c
+gcc -ansi -pedantic-errors -Wall -c database.c
+gcc -o project user_interface.o database.o
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% make
+make: `project' is up to date.
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% touch user_interface.c
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% make
+gcc -ansi -pedantic-errors -Wall -c user_interface.c
+gcc -o project user_interface.o database.o
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% touch database.c
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% make
+gcc -ansi -pedantic-errors -Wall -c database.c
+gcc -o project user_interface.o database.o
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% touch *o
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% make
+gcc -o project user_interface.o database.o
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% exit
+exit
+
+Script done on Fri 27 Oct 2023 11:32:28 PM HST

@@ -1,0 +1,342 @@
+Script started on Fri 27 Oct 2023 11:23:14 PM HST
+]0;cdc21@uhx02:~/project1[?1034huhx02:/home/c/cdc21/project1% ./project
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: print
+
+*******************************************
+           Print All: Option Selected           
+*******************************************
+
+NO RECORDS TO BE PRINTED
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: adds
+
+INVALID CHOICE.
+---------------------------------------
+add: Adds a new bank record.
+printall: Prints all existing bank records.
+find: Finds exisitng bank record.
+delete: Deletes one existing bank record.
+quit: Quits the program
+----------------------------------------
+
+PLEASE SELECT A VALID OPTION: Add
+
+*******************************************
+              Add: Option Selected              
+*******************************************
+
+Please enter your account number: 123456
+Please enter your name: Christian Dela Cruz
+Please enter your address below and type '$' when finished:
+12-3456 House Street,
+Some City, h Hawaii 96000$
+
+==================================================
+=           RECORD SUCCESSFULLY ADDED            =
+==================================================
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: ad
+
+*******************************************
+              Add: Option Selected              
+*******************************************
+
+Please enter your account number: 987654
+Please enter your name: Doctor Queen Elizabeth the First
+
+Name is too long. Please enter a shorter name.
+Doctor Queen Elizabeth the 1st
+
+Name is too long. Please enter a shorter name.
+Dr. Queen the 1st
+Please enter your address below and type '$' when finished:
+Buckingham Palace,
+Londan, Enal  gland, United Kingdom,
+
++-------------------------------------------------------------+
++    Address is too long. Please enter a shorter address.     +
++ Please enter your address below and type '$' when finished: +
++-------------------------------------------------------------+
+Buckingham Pakace    lace,
+London, England$
+
+==================================================
+=           RECORD SUCCESSFULLY ADDED            =
+==================================================
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: printall
+
+*******************************************
+           Print All: Option Selected           
+*******************************************
+
+Account Number: 987654
+Name: Dr. Queen the 1st
+Address: Buckingham Palace,
+London, England
+
+
+Account Number: 123456
+Name: Christian Dela Cruz
+Address: 12-3456 House Street,
+Some City, Hawaii 96000
+
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: quit
+
+###########################################
+     Thank You for Banking with Us!        
+      Have a Great Day and Goodbye!          
+###########################################
+
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% ./project derbug
+ERROR: INCORRECT COMMAND LINE ARGUMENTS
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% ./project debug x
+ERROR: INCORRECT COMMAND LINE ARGUMENTS
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% ./rp[K[Kproject debug
+
+========== This is the readFile function ==========
+Parameters:
+struct record*: (nil)
+char[] filename: records
+===================================================
+
+========== This is the addRecord function ==========
+Parameters:
+struct record:(nil)
+int: 987654
+address[]:Buckingham Palace,
+London, England
+name[]: Dr. Queen the 1st
+====================================================
+
+========== This is the addRecord function ==========
+Parameters:
+struct record:0x1f20250
+int: 123456
+address[]:12-3456 House Street,
+Some City, Hawaii 96000
+name[]: Christian Dela Cruz
+====================================================
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: p
+
+*******************************************
+           Print All: Option Selected           
+*******************************************
+
+========== This is the printAllRecords function ==========
+Parameters:
+struct record:0x1f20250
+==========================================================
+
+Account Number: 987654
+Name: Dr. Queen the 1st
+Address: Buckingham Palace,
+London, England
+
+
+Account Number: 123456
+Name: Christian Dela Cruz
+Address: 12-3456 House Street,
+Some City, Hawaii 96000
+
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: deletes
+
+INVALID CHOICE.
+---------------------------------------
+add: Adds a new bank record.
+printall: Prints all existing bank records.
+find: Finds exisitng bank record.
+delete: Deletes one existing bank record.
+quit: Quits the program
+----------------------------------------
+
+PLEASE SELECT A VALID OPTION: delete
+
+*******************************************
+            Delete: Option Selected            
+*******************************************
+
+Please enter your account number: 123456
+
+========== This is the deleteRecord function ==========
+Parameters:
+struct record:0x1f20250
+int: 123456
+=======================================================
+
+====================================================
+=           RECORD SUCCESSFULLY DELETED            =
+====================================================
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: find
+
+*******************************************
+             Find: Option Selected             
+*******************************************
+
+Please enter your account number: 9876654    654
+
+========== This is the findRecord function ==========
+Parameters:
+struct record:0x1f20250
+int: 987654
+=====================================================
+
+Account Number: 987654
+Name: Dr. Queen the 1st
+Address: Buckingham Palace,
+London, England
+
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: quit
+
+========== This is the writeFile function ==========
+Parameters:
+struct record*: 0x1f20250
+char[] filename: records
+====================================================
+
+###########################################
+     Thank You for Banking with Us!        
+      Have a Great Day and Goodbye!          
+###########################################
+
+
+========== This is the writeFile function ==========
+Parameters:
+struct record*: 0x1f20250
+char[] filename: records
+====================================================
+
+========== This is the writeFile function ==========
+Parameters:
+struct record*: 0x1f20250
+char[] filename: records
+====================================================
+
+========== This is the writeFile function ==========
+Parameters:
+struct record*: 0x1f20250
+char[] filename: records
+====================================================
+
+========== This is the cleanup function ==========
+Parameters:
+struct record**: 0x1f20250
+===================================================
+]0;cdc21@uhx02:~/project1uhx02:/home/c/cdc21/project1% exit
+exit
+
+Script done on Fri 27 Oct 2023 11:27:53 PM HST
