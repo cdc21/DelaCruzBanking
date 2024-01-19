@@ -1,0 +1,46 @@
+The tests for user_interface.cpp and llist.cpp went accordingly. It passed the same exact test cases from project1
+showing its functionality has not changed when translating from C to C++. It passed crucial test such as reading
+from a file and writing to file. All of the functions work accordingly such as add having the same functionailty 
+as it had prior. All account records are still ordered in descending order, name and address handling work perfectly
+the same, pre-existing account numbers are not added, and option handling has improved. Prior, when entering an invalid 
+option such as, "hello world", it would print the menu twice becuase it was based on how many words the user entered. 
+In project1, all options that could be selected were only one-worded, so it was over-looked. This is issue has been 
+resolved, so when entering multi-worded options, it handles it so it only prints the menu once to ask for a valid option. 
+Other option handlings such as entering account numbers work the same as well as a user is not allowed to enter 0, negative
+numbers, nor words and will ask the user to enter a valid account number continuously without the program exiting. Likewise,
+when entering a menu-option, the program handles it accordingly by handling case-sensitve entries and partial, valid entries
+as valid. An example of this is "aD" or "PriNtAlL"; the program would correctly recognize this and display the add/printall functions. 
+The printall function using the overloaded operator works perfectly and prints all records accordingly, in descending account 
+number and exactly how the user typed in their address. The find and delete functions work perfectly as it is able to
+find the account number that was entered and is able to print the record or delete it; both functions handle non-existing 
+account numbers by showing a message that the account number does not exist. 
+
+In the debug mode invoking, the two make files perfectly create two separate executables, one for debugging, and one for regular use.
+Instead of using a global variable, the #ifdef directives were used instead and the -D flag during compile time was used. It 
+perfectly debugs exactly like before. Debug mode sections were also added to all constructors and destructors as well. 
+When Debug mode is invoked, it shows what function is being called and prints it to the terminal in a distintive fashion between
+functions, constructors, deoconstructors, and actual output. However, I encountered a weird problem when trying to compile and link
+the two different versions. You can not call the make files, debug.mak and release.mak, in a row because it does not compile and link the second
+make file. What I mean is that when the first makefile is called (debug.mak), it will compile with the -D flag and define DDEBUG_MODE
+and link it to project_debug as an executable. Now when the second makefile is called (release.mak), it does not recompile the 
+.cpp files as it already sees it has already been compiled prior from the debug makefile. So, it linkes the debug-compiled-files to the 
+release exectubale, project. To work around this, touch *.cpp must be called in between, so that the files are recompiled to 
+have/not have DEBUG_MODE defined during compilation, and then linked to the correct exectubale. Besides that issue, both files 
+perfectly compile and link the files together. 
+
+Along with #ifdef directives for debug mode, all headers files have guards to ensure all header files are only defined once for 
+a smooth compilation and linking of the program. 
+
+In the extra credit portion, the test code I used is commeneted out in the bottom of the main function prior to the return
+statement as to show how I tested the extra credit operators and constructors. The copy constructor creates an exact copy 
+of the llist object when first intialized as showin in "llist copy = start". It is able to copy every record exactly how it 
+was writtten and creates a new mirror-like object. Similarly, the assignment-operator-override does the exact same. However,
+it is able to set two llist objects equal to each other and is able to create two of the same objects after initalization of 
+the copy object, i.e. "llist1 = llist2". Moving onto the <<-overload-operator, it prints the entire database and performs 
+the exact same as the printallrecords() function call. The overload operator perfectly prints the entire linked list in 
+perfect format. Most importantly, when in debug mode, it shows all three llist objects, (1) the original object, (2) the object 
+created by the copy constructor, and (3) the object used using the assignment operator, all have different starting addresses 
+for each of their respective linked lists meaning there was no memeory leak. 
+
+Overall, the program has handeled all known test and handles them accordingly. 
+

@@ -1,0 +1,341 @@
+Script started on Sun 26 Nov 2023 06:30:46 PM HST
+]0;cdc21@uhx02:~/project2[?1034huhx02:/home/c/cdc21/project2% ./project
+[3;J[H[2J
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: printall
+
+*******************************************
+           Print All: Option Selected           
+*******************************************
+
+~ NO RECORDS TO BE PRINTED ~
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: aD
+
+*******************************************
+              Add: Option Selected              
+*******************************************
+
+Please enter your account number: 123
+Please enter your name: Christian
+Please enter your address below and type '$' when finished:
+multi-loine
+address$
+
+==================================================
+=           RECORD SUCCESSFULLY ADDED            =
+==================================================
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: print all my records
+
+INVALID CHOICE.
+---------------------------------------
+add: Adds a new bank record.
+printall: Prints all existing bank records.
+find: Finds existing bank record.
+delete: Deletes one existing bank record.
+quit: Quits the program
+----------------------------------------
+
+PLEASE SELECT A VALID OPTION: priNtaLL
+
+*******************************************
+           Print All: Option Selected           
+*******************************************
+
+Account Number: 123
+Name: Christian
+Address: multi-loine
+address
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: quits
+
+INVALID CHOICE.
+---------------------------------------
+add: Adds a new bank record.
+printall: Prints all existing bank records.
+find: Finds existing bank record.
+delete: Deletes one existing bank record.
+quit: Quits the program
+----------------------------------------
+
+PLEASE SELECT A VALID OPTION: quit
+
+###########################################
+     Thank You for Banking with Us!        
+      Have a Great Day and Goodbye!          
+###########################################
+
+]0;cdc21@uhx02:~/project2uhx02:/home/c/cdc21/project2% ./project_debug
+[3;J[H[2J
+---------- This is the default llist() constructor ----------
+Parameters:
+NO PARAMETERS
+-------------------------------------------------------------
+
+========== This is the readFile function ==========
+Parameters:
+NO PARAMETERS
+---------------------------
+start: 0
+====================================================
+
+========== This is the addRecord function ==========
+Parameters:
+int: 123
+address[]: multi-loine
+address
+name[]: Christian
+---------------------------
+start: 0
+====================================================
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: print
+
+*******************************************
+           Print All: Option Selected           
+*******************************************
+
+========== This is the operator<<(std::ostream& os, const llist& list) ==========
+                                  overloaded operator                                
+==================================================================================
+
+Account Number: 123
+Name: Christian
+Address: multi-loine
+address
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: find
+
+*******************************************
+             Find: Option Selected             
+*******************************************
+
+Please enter your account number: 123
+
+========== This is the findRecord function ==========
+Parameters:
+int:123
+---------------------------
+start: 0x142a260
+=====================================================
+
+Account Number: 123
+Name: Christian
+Address: multi-loine
+address
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: add
+
+*******************************************
+              Add: Option Selected              
+*******************************************
+
+Please enter your account number: 456
+Please enter your name: name
+
+========== This is the getaddress function ==========
+Parameters:
+address[]: 
+int: 50
+====================================================
+Please enter your address below and type '$' when finished:
+address 123$
+
+========== This is the addRecord function ==========
+Parameters:
+int: 456
+address[]: address 123
+name[]: name
+---------------------------
+start: 0x142a260
+====================================================
+
+==================================================
+=           RECORD SUCCESSFULLY ADDED            =
+==================================================
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: delete
+
+*******************************************
+            Delete: Option Selected            
+*******************************************
+
+Please enter your account number: 123
+
+========== This is the deleteRecord function ==========
+Parameters:
+int:123
+---------------------------
+start: 0x1428010
+=======================================================
+
+====================================================
+=           RECORD SUCCESSFULLY DELETED            =
+====================================================
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: printall
+
+*******************************************
+           Print All: Option Selected           
+*******************************************
+
+========== This is the operator<<(std::ostream& os, const llist& list) ==========
+                                  overloaded operator                                
+==================================================================================
+
+Account Number: 456
+Name: name
+Address: address 123
+
+*******************************************
+  Welcome to Bank of Dela Cruz Financial
+*******************************************
+MENU:
+-------------------------------------------------
+Add: Adds a new bank record.
+Printall: Prints all existing bank records.
+Find: Finds existing bank record.
+Delete: Deletes one existing bank record.
+Quit: Quits the program.
+-------------------------------------------------
+
+Please choose a menu option to continue: quit
+
+###########################################
+     Thank You for Banking with Us!        
+      Have a Great Day and Goodbye!          
+###########################################
+
+
+---------- This is the ~llist() deconstructor ----------
+Parameters:
+NO PARAMETERS
+
+start: 0x1428010
+--------------------------------------------------------
+
+========== This is the writeFile function ==========
+Parameters:
+NO PARAMETERS
+---------------------------
+start: 0x1428010
+=====================================================
+
+========== This is the cleanUp function ==========
+Parameters:
+NO PARAMETERS
+---------------------------
+start: 0x1428010
+==================================================
+]0;cdc21@uhx02:~/project2uhx02:/home/c/cdc21/project2% exit
+exit
+
+Script done on Sun 26 Nov 2023 06:32:27 PM HST
